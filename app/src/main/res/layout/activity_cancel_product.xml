@@ -267,7 +267,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView8" />
 
     <TextView
-        android:id="@+id/depositMoney2"
+        android:id="@+id/depositMoney"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -277,14 +277,14 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonMain1" />
 
     <TextView
-        android:id="@+id/selectProductMoney2"
+        android:id="@+id/selectProductMoney"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="需付金額："
         android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/depositMoney2"
-        app:layout_constraintTop_toBottomOf="@+id/depositMoney2" />
+        app:layout_constraintStart_toStartOf="@+id/depositMoney"
+        app:layout_constraintTop_toBottomOf="@+id/depositMoney" />
 
     <Button
         android:id="@+id/buttonMain1"
@@ -402,8 +402,8 @@
         android:layout_marginTop="50dp"
         android:text="A : 0     B : 0"
         android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/selectProductMoney2"
-        app:layout_constraintTop_toBottomOf="@+id/selectProductMoney2" />
+        app:layout_constraintStart_toStartOf="@+id/selectProductMoney"
+        app:layout_constraintTop_toBottomOf="@+id/selectProductMoney" />
 
     <TextView
         android:id="@+id/textViewproductCD1"

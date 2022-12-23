@@ -33,8 +33,8 @@ public class SelectProductActivity extends AppCompatActivity implements View.OnC
         buttonAdd.setOnClickListener(this);
         //buttonMinus.setOnClickListener(this);
 
-        textViewDepositMoney1 = (TextView) findViewById(R.id.depositMoney2);
-        textViewSelectProductMoney = (TextView) findViewById(R.id.selectProductMoney2);
+        textViewDepositMoney1 = (TextView) findViewById(R.id.depositMoney);
+        textViewSelectProductMoney = (TextView) findViewById(R.id.selectProductMoney);
         textViewDepositMoney1.setText("投幣金額：$ "+String.format("%.2f",database.depositMoney));
         textViewSelectProductMoney.setText("需付金額：$ "+String.format("%.2f",database.selectProductMoney));
 

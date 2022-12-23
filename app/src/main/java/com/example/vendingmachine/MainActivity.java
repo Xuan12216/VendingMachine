@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        depositMoney = (TextView) findViewById(R.id.depositMoney2);
-        selectProductMoney = (TextView) findViewById(R.id.selectProductMoney2);
+        depositMoney = (TextView) findViewById(R.id.depositMoney);
+        selectProductMoney = (TextView) findViewById(R.id.selectProductMoney);
 
         depositMoney.setText("投幣金額：$ "+String.format("%.2f",database.depositMoney));
         selectProductMoney.setText("需付金額：$ "+String.format("%.2f",database.selectProductMoney));
@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonC = (Button) findViewById(R.id.button_c);
         buttonC.setOnClickListener(this);
+
+        buttonD = (Button) findViewById(R.id.button_d);
+        buttonD.setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_c:
                 startActivity(new Intent(this,CancelProductActivity.class));
+                break;
+            case R.id.button_d:
+                startActivity(new Intent(this,PurchaseProductActivity.class));
                 break;
         }
     }

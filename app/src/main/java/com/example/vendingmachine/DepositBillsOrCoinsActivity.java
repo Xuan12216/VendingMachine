@@ -64,7 +64,6 @@ public class DepositBillsOrCoinsActivity extends AppCompatActivity implements Vi
                         else if (temp==20) database.Bills[3]+=1;
                         database.depositMoney=(database.totalBills+(database.totalCoins/100));
                         textViewTotal.setText("總金額：$"+database.depositMoney);
-
                 }
                 editTextBills.getText().clear();
                 break;
@@ -80,7 +79,6 @@ public class DepositBillsOrCoinsActivity extends AppCompatActivity implements Vi
                         else if (temp1==25) database.Coins[2]+=1;
                         database.depositMoney=(database.totalBills+(database.totalCoins/100));
                         textViewTotal.setText("總金額：$"+database.depositMoney);
-
                 }
                 editTextCoins.getText().clear();
                 break;

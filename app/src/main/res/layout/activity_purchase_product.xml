@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,8 +22,8 @@
         android:id="@+id/imageView2"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:srcCompat="@drawable/orangejuice"
         app:strokeColor="#000"
@@ -33,8 +33,8 @@
         android:id="@+id/imageView3"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:srcCompat="@drawable/water"
         app:strokeColor="#000"
@@ -44,8 +44,8 @@
         android:id="@+id/imageView4"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:srcCompat="@drawable/chocolate"
         app:strokeColor="#000"
@@ -55,7 +55,7 @@
         android:id="@+id/imageView5"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:srcCompat="@drawable/hershey"
@@ -66,8 +66,8 @@
         android:id="@+id/imageView6"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:srcCompat="@drawable/oreo"
         app:strokeColor="#000"
@@ -77,8 +77,8 @@
         android:id="@+id/imageView7"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:srcCompat="@drawable/doritos"
         app:strokeColor="#000"
@@ -270,169 +270,158 @@
         android:id="@+id/depositMoney"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:text="投幣金額："
         android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/buttonMain1"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMain1" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/F_Amount" />
 
     <TextView
         android:id="@+id/selectProductMoney"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:text="需付金額："
         android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/depositMoney"
-        app:layout_constraintTop_toBottomOf="@+id/depositMoney" />
+        app:layout_constraintBottom_toBottomOf="@+id/depositMoney"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
 
     <Button
         android:id="@+id/buttonMain1"
         android:layout_width="120dp"
         android:layout_height="80dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="回主頁"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup1"
-        android:layout_width="1000dp"
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="120dp"
         android:layout_height="80dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toEndOf="@+id/textView20"
-        app:layout_constraintTop_toBottomOf="@+id/textView17">
-
-        <RadioButton
-            android:id="@+id/radioButtonA1"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="A"
-            android:textSize="25dp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonB1"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="B"
-            android:textSize="25dp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonC1"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="C"
-            android:textSize="25dp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonD1"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="D"
-            android:textSize="25dp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonE1"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="E"
-            android:textSize="25dp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonF1"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="F"
-            android:textSize="25dp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonG1"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="G"
-            android:textSize="25dp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonH1"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="H"
-            android:textSize="25dp" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:text="請選擇："
+        android:layout_marginTop="100dp"
+        android:text="投幣"
         android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup1"
-        app:layout_constraintVertical_bias="0.391" />
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPurchase"
+        app:layout_constraintStart_toStartOf="@+id/buttonPurchase"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPurchase" />
 
     <Button
-        android:id="@+id/buttonAdd"
-        android:layout_width="100dp"
+        android:id="@+id/buttonPurchase"
+        android:layout_width="150dp"
         android:layout_height="80dp"
-        android:text="增加"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/radioGroup1"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup1"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
-
-    <TextView
-        android:id="@+id/textViewproductAB1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="A : 0     B : 0"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/selectProductMoney"
-        app:layout_constraintTop_toBottomOf="@+id/selectProductMoney" />
-
-    <TextView
-        android:id="@+id/textViewproductCD1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="C : 0     D : 0"
+        android:layout_marginEnd="30dp"
+        android:text="確定購買"
         android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/textViewproductAB1"
-        app:layout_constraintTop_toBottomOf="@+id/textViewproductAB1" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewproductEF1"
+        android:id="@+id/A_Amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="E : 0      F : 0"
+        android:layout_marginTop="10dp"
+        android:text="數量："
         android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/textViewproductCD1"
-        app:layout_constraintTop_toBottomOf="@+id/textViewproductCD1" />
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
-        android:id="@+id/textViewproductGH1"
+        android:id="@+id/B_Amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="G : 0     H : 0"
+        android:layout_marginTop="10dp"
+        android:text="數量："
         android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@+id/textViewproductEF1"
-        app:layout_constraintTop_toBottomOf="@+id/textViewproductEF1" />
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/C_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="數量："
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/D_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="數量："
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/E_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="數量："
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/F_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="數量："
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/G_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="數量："
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/H_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="數量："
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/remainMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩餘金額："
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/selectProductMoney"
+        app:layout_constraintEnd_toEndOf="@+id/textView8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="640dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
