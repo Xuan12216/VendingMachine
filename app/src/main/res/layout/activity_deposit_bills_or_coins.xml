@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepositBillsOrCoinsActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="紙幣"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editBills"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="輸入整數1、5、10 或 20"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="硬幣"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <EditText
+        android:id="@+id/editCoins"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="輸入整數 5、10 或 25"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="450dp" />
+
+    <Button
+        android:id="@+id/buttonBills"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="確定"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/editBills"
+        app:layout_constraintStart_toStartOf="@+id/editBills"
+        app:layout_constraintTop_toBottomOf="@+id/editBills" />
+
+    <Button
+        android:id="@+id/buttonCoins"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="確定"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/editCoins"
+        app:layout_constraintStart_toStartOf="@+id/editCoins"
+        app:layout_constraintTop_toBottomOf="@+id/editCoins" />
+
+    <TextView
+        android:id="@+id/textViewBIlls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="紙幣金額："
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editBills"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editBills"
+        app:layout_constraintTop_toTopOf="@+id/editBills" />
+
+    <TextView
+        android:id="@+id/textViewCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="硬幣金額："
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editCoins"
+        app:layout_constraintStart_toStartOf="@+id/textViewBIlls"
+        app:layout_constraintTop_toTopOf="@+id/editCoins" />
+
+    <TextView
+        android:id="@+id/textviewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="總數金額："
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCoins"
+        app:layout_constraintStart_toStartOf="@+id/textViewCoins"
+        app:layout_constraintTop_toTopOf="@+id/textViewCoins" />
+
+    <Button
+        android:id="@+id/button_main2"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="回主頁"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
