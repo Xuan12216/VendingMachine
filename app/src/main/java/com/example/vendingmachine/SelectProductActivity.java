@@ -24,7 +24,7 @@ public class SelectProductActivity extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_product);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //2this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         buttonMain = (Button) findViewById(R.id.buttonMain1);
         buttonMinus = (Button) findViewById(R.id.buttonMinus);

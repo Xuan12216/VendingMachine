@@ -24,7 +24,7 @@ public class CancelProductActivity extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cancel_product);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         buttonMain = (Button) findViewById(R.id.buttonMain1);
         buttonMinus = (Button) findViewById(R.id.buttonMinus);

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.vendingmachine">
-
+<!--android:screenOrientation="landscape" , This line force landscape -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,22 +14,32 @@
         android:theme="@style/Theme.VendingMachine"
         tools:targetApi="31">
         <activity
+            android:name=".AbortPurchaseActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
             android:name=".PurchaseSuccessActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".PurchaseProductActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".CancelProductActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".SelectProductActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".DepositBillsOrCoinsActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

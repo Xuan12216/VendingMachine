@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         depositMoney = (TextView) findViewById(R.id.depositMoney);
         selectProductMoney = (TextView) findViewById(R.id.selectProductMoney);
@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonD = (Button) findViewById(R.id.button_d);
         buttonD.setOnClickListener(this);
+
+        buttonE = (Button) findViewById(R.id.button_e);
+        buttonE.setOnClickListener(this);
     }
 
     @Override
@@ -55,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_d:
                 startActivity(new Intent(this,PurchaseProductActivity.class));
+                break;
+            case R.id.button_e:
+                startActivity(new Intent(this, AbortPurchaseActivity.class));
                 break;
         }
     }

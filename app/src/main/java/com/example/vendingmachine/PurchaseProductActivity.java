@@ -20,7 +20,7 @@ public class PurchaseProductActivity extends AppCompatActivity implements View.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_product);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         buttonMain = (Button) findViewById(R.id.buttonMain1);
         buttonPurchase = (Button) findViewById(R.id.buttonPurchase);

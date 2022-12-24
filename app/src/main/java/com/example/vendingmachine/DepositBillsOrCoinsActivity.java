@@ -21,7 +21,7 @@ public class DepositBillsOrCoinsActivity extends AppCompatActivity implements Vi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deposit_bills_or_coins);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         buttonMain = (Button) findViewById(R.id.button_main2);
         buttonBills = (Button) findViewById(R.id.buttonBills);
@@ -35,8 +35,8 @@ public class DepositBillsOrCoinsActivity extends AppCompatActivity implements Vi
         textViewTotal = (TextView) findViewById(R.id.textviewTotal);
 
         textViewTotal.setText("總金額：$"+database.depositMoney);
-        textViewBills.setText("紙幣金額：$"+database.totalBills);
-        textViewCoins.setText("硬幣金額：$"+database.totalCoins/100);
+        textViewBills.setText("紙幣金額：$"+(int)database.totalBills);
+        textViewCoins.setText("硬幣金額：¢"+(int)database.totalCoins);
 
         buttonMain.setOnClickListener(this);
         buttonCoins.setOnClickListener(this);
@@ -57,7 +57,7 @@ public class DepositBillsOrCoinsActivity extends AppCompatActivity implements Vi
                     int temp = Integer.valueOf(editTextBills.getText().toString());
                     if (temp==1||temp==5||temp==10||temp==20)
                         database.totalBills+=temp;
-                        textViewBills.setText("紙幣金額：$"+database.totalBills);
+                        textViewBills.setText("紙幣金額：$"+(int)database.totalBills);
                         if (temp==1) database.Bills[0]+=1;
                         else if (temp==5) database.Bills[1]+=1;
                         else if (temp==10) database.Bills[2]+=1;
@@ -73,7 +73,7 @@ public class DepositBillsOrCoinsActivity extends AppCompatActivity implements Vi
                     int temp1 = Integer.valueOf(editTextCoins.getText().toString());
                     if (temp1==5 ||temp1==10 ||temp1==25)
                         database.totalCoins+=temp1;
-                        textViewCoins.setText("硬幣金額：$"+database.totalCoins/100);
+                        textViewCoins.setText("硬幣金額：¢"+(int)database.totalCoins);
                         if (temp1==5) database.Coins[0]+=1;
                         else if (temp1==10) database.Coins[1]+=1;
                         else if (temp1==25) database.Coins[2]+=1;
